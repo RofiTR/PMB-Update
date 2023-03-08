@@ -5,6 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/style.css" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+  .container-vidio {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  }
+  .p-56\% {
+    padding-top: 56.25%;
+}
+.p-80\% {
+   padding: 80%;
+}
+  
+  /* Then style the iframe to fit in the container div with full height and width */
+  .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+</style>
 </head>
 <body> 
   <div class="relative">
@@ -20,7 +45,7 @@
   </div>
   <img src="img/5.png" alt="" class="h-full w-full">
   <div class="relative flex justify-center ">
-    <div class="grid grid-cols-3 absolute items-center p-2 gap-32 -top-36 text-center  rounded-lg">
+    <div class="grid grid-cols-3 absolute items-center p-5 gap-32 -top-36  bg-sky-400 opacity-60 rounded-lg">
       <div class="flex items-center ">
       <img src="img/6.png" alt=""><div class="font-semibold text-sm text-white uppercase "> Kampus Lokal Berdaya Internasional</div>
     </div>
@@ -31,20 +56,101 @@
       <img src="img/7.png" alt=""><div class="font-semibold text-sm text-white uppercase "> Integrasi Keilmuan, Kemanuasiaan, modern, <br> kebangsaan dan pengabdian</div>
     </div>
   </div>
-  <div class="grid grid-cols-4  gap-36 absolute -top-7 px-14">
-    <div class="bg-gradient-to-r from-yellow-300 to-orange-300">Kenapa UHB ? <img src="img/001.jpg" alt=""></div>
-    <div class="bg-gradient-to-r from-yellow-300 to-orange-300">Fakultas <img src="img/002.jpg" alt=""></div>
-    <div class="bg-gradient-to-r from-yellow-300 to-orange-300">Informasi Pendaftaran <img src="img/003.jpg" alt=""></div>
-    <div class="bg-gradient-to-r from-yellow-300 to-orange-300">Pendaftaran Online <img src="img/004.jpg" alt=""></div>
+  <div class="grid grid-cols-3 absolute items-center p-5 gap-32 -top-36 ">
+    <div class="flex items-center ">
+    <img src="img/6.png" alt=""><div class="font-semibold text-sm text-white uppercase "> Kampus Lokal Berdaya Internasional</div>
   </div>
+  <div class="flex items-center">
+    <img src="img/7.png" alt=""><div class="font-semibold text-sm text-white uppercase "> Kampus Di Kota Pendidikan</div>
   </div>
-  <div class="pt-44 ">
-    <div class="text-3xl uppercase font-bold underline ">Berita unggulan</div>
-    <div class="bg-slate-400 pt-30 pb-10">
-<div class="">
-      <div class="flex justify-center"><iframe width="560" height="315" src="https://www.youtube.com/embed/WomFlKMoGWg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+  <div class="flex items-center">
+    <img src="img/7.png" alt=""><div class="font-semibold text-sm text-white uppercase "> Integrasi Keilmuan, Kemanuasiaan, modern, <br> kebangsaan dan pengabdian</div>
+  </div>
+</div>
+  <div class="grid grid-cols-4   absolute -top-16 px-14 gap-x-36">
+    <div class="bg-gradient-to-r from-yellow-300 to-orange-300 flex items-center "><img src="img/9.png" alt="" class="w-1/6">Kenapa UHB ?  </div>
+    <div class="bg-gradient-to-r from-yellow-300 to-orange-300 flex items-center "><img src="img/10.png" alt="" class="w-1/6">Fakultas  </div>
+    <div class="bg-gradient-to-r from-yellow-300 to-orange-300 flex items-center "><img src="img/11.png" alt="" class="w-1/6">Informasi Pendaftaran   </div>
+    <div class="bg-gradient-to-r from-yellow-300 to-orange-300 flex items-center "><img src="img/12.png" alt="" class="w-1/6">Pendaftaran Online  </div>
+
+    <div class=""><img src="img/001.jpg" alt=""> </div>
+    <div class=""><img src="img/002.jpg" alt=""> </div>
+    <div class=""><img src="img/003.jpg" alt=""> </div>
+    <div class=""><img src="img/004.jpg" alt=""> </div>
+    
+ 
+</div>
+  </div>
+
+    <div class="pt-60 text-4xl uppercase font-bold text-blue-800 mb-3"> <a class=" underline decoration-yellow-300">  Berita ungg</a>lan </div>
+    <div class="relative overflow-hidden w-full pt-[45%] bg-slate-400 ">  
+      <iframe class="absolute  top-0 left-0 bottom-0 right-0 max-w-7xl w-full max-h-[45rem] h-full border-none " src="https://www.youtube.com/embed/WomFlKMoGWg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+
+    <div class="relative pt-20 uppercase text-blue-800 text-center text-6xl font-bold -bottom-7">daftar fakultas prodi studi</div>
+    
+    
+    <div class=" w-full  bg-green-400 ">
+      <div class="grid grid-cols-3 pt-[10%] text-center gap-x-28 gap-y-5 mx-28 uppercase">
+        <div class="font-bold text-3xl bg-cyan-500 flex items-center"><img src="img/13.png" alt="" class="w-20 " > <a class=" underline decoration-yellow-300">fakultas ilmu </a> sains</div>
+        <div class="font-bold text-3xl bg-cyan-500 flex items-center"><img src="img/13.png" alt="" class="w-20 " > <a class=" underline decoration-yellow-300">fakultas ilmu </a> kesehatan</div>
+        <div class="font-bold text-3xl bg-cyan-500 flex items-center"><img src="img/13.png" alt="" class="w-20 " > <a class=" underline decoration-yellow-300">fakultas ilmu </a>  sosial</div>
+        <div class="font-semibold text-xl bg-cyan-500 flex items-center"><img src="img/ceklis.png" alt="" class="w-10 " >S1 Hukum</div>
+        <div class="font-semibold text-xl bg-cyan-500 flex items-center"><img src="img/ceklis.png" alt="" class="w-10 " >S1 Farmasi</div>
+        <div class="font-semibold text-xl bg-cyan-500 flex items-center"><img src="img/ceklis.png" alt="" class="w-10 " >S1 Informatika</div>
+        <div class="font-semibold text-xl bg-cyan-500 flex items-center"><img src="img/ceklis.png" alt="" class="w-10 " >S1 Akuntansi</div>
+        <div class="font-semibold text-xl bg-cyan-500 flex items-center"><img src="img/ceklis.png" alt="" class="w-10 " >S1 Teknologi Informasi</div>
+        <div class="font-semibold text-xl bg-cyan-500 flex items-center"><img src="img/ceklis.png" alt="" class="w-10 " >S1 Keperawatan</div>
+        <div class="font-semibold text-xl bg-cyan-500 flex items-center"><img src="img/ceklis.png" alt="" class="w-10 " >S1 Manajemen</div>
+        <div class="font-semibold text-xl bg-cyan-500 flex items-center"><img src="img/ceklis.png" alt="" class="w-10 " >S1 Sistem Informasi</div>
+        <div class="font-semibold text-xl bg-cyan-500 flex items-center"><img src="img/ceklis.png" alt="" class="w-10 " >D4 Keperawatan Anestesi</div>
+        <div class="font-semibold text-xl bg-cyan-500 flex items-center"><img src="img/ceklis.png" alt="" class="w-10 " >S1 Pendidikan Bahasa Inggris</div>
+        <div class="bg-cyan-500"></div>
+        <div class="font-semibold text-xl bg-cyan-500 flex items-center"><img src="img/ceklis.png" alt="" class="w-10 " >D3 Keperawatan</div>
+        <div class="bg-cyan-500"></div>
+        <div class="bg-cyan-500"></div>
+        <div class=" font-semibold text-xl bg-cyan-500 flex items-center"><img src="img/ceklis.png" alt="" class="w-10 " >D3 Kebidanan</div>
+        <div class="bg-cyan-500"></div>
+        <div class="bg-cyan-500"></div>
+        <div class=" font-semibold text-xl bg-cyan-500 flex items-center"><img src="img/ceklis.png" alt="" class="w-10 " >Profesi Ners</div>
+      
+      
+      </div>
     </div>
-  </div>
+
+    <div class=" w-full  bg-green-400 ">
+      <div class="grid grid-cols-3 pt-[10%] text-center gap-x-28 gap-y-5 mx-28 uppercase">
+        <div class="font-bold text-3xl bg-cyan-500 flex items-center"><img src="img/13.png" alt="" class="w-20 " > <a class=" underline decoration-yellow-300">fakultas ilmu </a> sains</div>
+        <div class="font-bold text-3xl bg-cyan-500 flex items-center"><img src="img/13.png" alt="" class="w-20 " > <a class=" underline decoration-yellow-300">fakultas ilmu </a> kesehatan</div>
+        <div class="font-bold text-3xl bg-cyan-500 flex items-center"><img src="img/13.png" alt="" class="w-20 " > <a class=" underline decoration-yellow-300">fakultas ilmu </a>  sosial</div>
+      </div>
+        
+        
+        
+      <div class="grid grid-cols-3 text-center gap-x-28 gap-y-5 mx-28 uppercase">
+        <div class="bg-slate-300 rounded-t-3xl ">
+
+          <div class="font-semibold text-xl  flex items-center bg-white mb-4 mt-12 rounded-lg"><img src="img/ceklis.png" alt="" class="w-10 " >S1 Akuntansi</div>
+          <div class="font-semibold text-xl  flex items-center bg-white mb-10 rounded-lg"><img src="img/ceklis.png" alt="" class="w-10 " >S1 Manajemen</div>
+          <div class="font-semibold text-xl  flex items-center"><img src="img/ceklis.png" alt="" class="w-10 " >S1 Hukum</div>
+          <div class="font-semibold text-xl  flex items-center"><img src="img/ceklis.png" alt="" class="w-10 " >S1 Pendidikan Bahasa Inggris</div>
+        </div>
+        <div class="bg-white">
+          <div class="font-semibold text-xl  flex items-center"><img src="img/ceklis.png" alt="" class="w-10 " >S1 Informatika</div>
+          <div class="font-semibold text-xl flex items-center"><img src="img/ceklis.png" alt="" class="w-10 " >S1 Teknologi Informasi</div>
+          <div class="font-semibold text-xl flex items-center"><img src="img/ceklis.png" alt="" class="w-10 " >S1 Sistem Informasi</div>
+
+        </div>
+        <div class="bg-white"> 
+          <div class="font-semibold text-xl  flex items-center"><img src="img/ceklis.png" alt="" class="w-10 " >S1 Farmasi</div>
+          <div class="font-semibold text-xl  flex items-center"><img src="img/ceklis.png" alt="" class="w-10 " >S1 Keperawatan</div>
+          <div class="font-semibold text-xl  flex items-center"><img src="img/ceklis.png" alt="" class="w-10 " >D4 Keperawatan Anestesi </div>
+          <div class="font-semibold text-xl  flex items-center"><img src="img/ceklis.png" alt="" class="w-10 " >D3 Keperawatan</div>
+          <div class="font-semibold text-xl  flex items-center"><img src="img/ceklis.png" alt="" class="w-10 " >D3 Kebidanan</div>
+          <div class="font-semibold text-xl  flex items-center"><img src="img/ceklis.png" alt="" class="w-10 " >Profesi Ners</div>
+        </div>
+
+      
+      </div>
     </div>
 </body>
 </html>
